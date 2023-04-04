@@ -21,6 +21,31 @@
         $alunos_notas["Ringo"] = "3";
 
         echo "O aluno " . $_GET["aluno"] . " possui a nota: " . $alunos_notas[$_GET["aluno"]];
+
+        foreach($alunos_notas as $key => $value){
+            echo "<br> {$key} = {$value}";
+        }
+
+        /*
+        array_pop($array) remove o ultimo elemento
+        array_shift($array) remove o primeiro elemento
+        
+        $keys = array_keys($array) armazena as keys do array
+        $values = array_values($array) armazena os values do array
+        exemplo do foreach de keys:
+            foreach($keys as $key){
+            echo "<br> {$key}";
+        }
+        exemplo do foreach de values:
+            foreach($values as $value){
+            echo "<br> {$value}";
+        }
+
+        $invertido = array_flip($array) inverte as keys e values de lugar
+        $reverso = array_reverse($array) inverte a ordem
+
+        echo count($array) conta um array
+        */
     ?>
 </body>
 </html>

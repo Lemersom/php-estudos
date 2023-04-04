@@ -16,17 +16,21 @@
         <input type="checkbox" name="frutas[]" value="laranja" id="fruta3">
         <label for="fruta3">Laranja</label>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" name="env_submit" value="Enviar">
     </form>
 
     <?php 
-        $frutas = $_POST["frutas"];
-        
-        echo "<ul>";
-        foreach($frutas as &$item){
-            echo "<li>$item";
+    //IR PARA testes-brocode/isset_empty.php para explicações
+    
+        if(isset($_POST["env_submit"])){
+            $frutas = $_POST["frutas"];
+
+            echo "<ul>";
+            foreach($frutas as &$item){
+                echo "<li>$item";
+            }
+            echo "</ul>";
         }
-        echo "</ul>";
     ?>
 </body>
 </html>
