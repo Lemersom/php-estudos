@@ -10,7 +10,8 @@
     <?php 
         /*
         em action no formulario, poderia ser substituido por:
-                                    <?= $_SERVER['PHP_SELF'] ?>
+                                    <?= $_SERVER['PHP_SELF'] ?>  ou
+                                    <?php $_SERVER["PHP_SELF"] ?>
         */
 
         //Declarando as variaveis
